@@ -34,12 +34,13 @@
     display:flex;
     flex-direction: column;
     margin: auto;
-    opacity:0.9;
+    opacity:0.5;
 }
 .header{
     background: red;
     height: 50px;
     display: flex;
+    opacity: 1;
     /* border-top-left-radius: 15px;
     border-top-right-radius: 15px; */
 }
@@ -103,8 +104,17 @@
     font-size: 120px;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 500px){
+    .outer-container{
+        background-image: url("https://source.unsplash.com/1600x900/?love,couple,red");
+    }
+    .container{
+        width:100%;
+    }
+}
 </style>
-<script type="text/javascript">
+<script src="js/myscript.js">
     function calc() {
     var lovedata = Math.random() * 100;
     lovedata = Math.floor(lovedata);
@@ -112,6 +122,8 @@
     // document.getElementById('data').innerText;
     console.log("Reached here");
 }
+
+
 </script>
 
 <body>
